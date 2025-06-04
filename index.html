@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <!-- main heading -->
+            <div class="main-heading">Weather App</div>
+            <!-- tab container -->
+            <div class="tab-container">
+                <p user-tab>Your Weather</p>
+                <p search-tab>Search Weather</p>
+            </div>
+
+            <!-- grant access container -->
+            <div class="grant-access-container">
+                <img src="./assets/location.png" alt="" width="70px" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access To Get Weather Information</p>
+                <button grant-access-btn>
+                    Grant Access
+                </button>
+            </div>
+
+            <!-- search bar -->
+            <form class="search-container">
+                <input type="text" class="search-box" placeholder="Search for city..." search-city>
+                <button type="submit">
+                    <img src="./assets/search.png" alt="" width="25px">
+                </button>
+            </form>
+
+            <!-- Loader -->
+            <div class="loader" loader>
+                <img src="./assets/loading.gif" alt="">
+                <p>Loading</p>
+            </div>
+
+            <!-- error image -->
+            <div class="error-container" error-container>
+                <img src="./assets/not-found.png" alt="" width="280px">
+                <p error-msg></p>
+            </div>
+
+            <div class="weather-info-container">
+                <div class="city-box">
+                    <p class="city"></p>
+                    <img class="city-img">
+                </div>
+                <div class="weather-desc"></div>
+                <img class="weather-img"></img>
+                <div class="temp"></div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/wind.png" alt="">
+                        <p>Windspeed</p>
+                        <p class="card-desc" wind-speed></p>
+                    </div>
+                        <div class="card">
+                        <img src="./assets/humidity.png" alt="">
+                        <p>Humidity</p>
+                        <p class="card-desc" humidity></p>
+                    </div>
+                        <div class="card">
+                        <img src="./assets/cloud.png" alt="">
+                        <p>Clouds</p>
+                        <p class="card-desc" clouds></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
