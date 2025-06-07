@@ -75,7 +75,7 @@ function searchCityFunc(){
     if(searchCity.value != ''){
         showWeatherContainer.classList.remove('active');
         errorImg.classList.remove('active');
-        const city = searchCity.value;
+        const city = (searchCity.value).trim();
         searchCity.value = "";
         fetchCityData(city);
     }
